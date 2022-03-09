@@ -1,0 +1,46 @@
+#forecast-container {
+  display: flex;
+  margin-top: 20px;
+  width: 800px;
+  height: auto;
+  flex-direction: column;
+  background-color: rgb(10, 11, 12);
+  border: 5px solid rgb(10, 11, 12);
+  border-radius: 10px;
+  box-shadow: 0 0 15px black;
+  -moz-box-shadow: 0 0 15px black;
+  -webkit-box-shadow: 0 0 15px black;
+  -o-box-shadow: 0 0 15px black;
+  color: rgb(238, 226, 226);
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+#forecast-title {
+  font-size: 18px;
+}
+
+#forecast-allday {
+  display: flex;
+  font-size: 16px;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 8px;
+  padding-bottom: 0;
+}
+
+#forecast-day {
+  display: flex;
+  flex-direction: column;
+}
+
+#forecast-icon {
+  transform: scale(0.5);
+  margin-top: -25px;
+}
+
+#forecast-temp {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -25px;
+}

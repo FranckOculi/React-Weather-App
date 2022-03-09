@@ -1,0 +1,5 @@
+@import './style/_page.css';
+@import './style/_header.css';
+@import './style/_search.css';
+@import './style/_currentWeather.css';
+@import './style/_forecast.css';
