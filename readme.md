@@ -2,7 +2,8 @@
 ---
 
 
-A simple weather app built with React/ReactDom framework.
+Une simple application météo créée avec le framework React.
+
 ![img](src/assets/img/img.png)
 
 
@@ -13,12 +14,12 @@ A simple weather app built with React/ReactDom framework.
 ## Objectives :
 ---
 
-This is my second project in React. The app can :
+Ceci est ma deuxième application React et l'idée était avant tout de réaliser une application faisant appel à une vrai API externe et non plus local. L'application peut :
 
-- use an API to render weather informations from the current day
-- use an other API to render weather informations from the next 4 days.
+- utiliser une API de données météo afin d'afficher les informations d'une ville en particulier,
+- afficher les données météo pour le jour en cours (partie principale) et les 4 prochains jours (bandeau du dessous).
 
-In the Version 0 the code is very light without tests and error catch.
+Pour lancer l'application il suffit de taper la commande "npm start".
 
 ## Technologies used :
 ---
