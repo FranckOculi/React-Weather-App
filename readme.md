@@ -2,7 +2,7 @@
 ---
 
 
-Une simple application météo créée avec le framework React.
+Une simple application météo créée avec React.
 
 ![img](src/assets/img/img.png)
 
@@ -14,7 +14,7 @@ Une simple application météo créée avec le framework React.
 ## Objectives :
 ---
 
-Ceci est ma deuxième application React et l'idée était avant tout de réaliser une application faisant appel à une vraie API externe et non plus locale. L'application peut :
+L'application peut :
 
 - utiliser une API de données météo afin d'afficher les informations d'une ville en particulier,
 - afficher les données météo pour le jour en cours (partie principale) et les 4 prochains jours (bandeau du dessous).
