@@ -1,9 +1,10 @@
-import React from 'react';
+type Props = {
+  deg: number
+}
 
-const WeatherIcon = (props) => {
+const WeatherIcon = ({ deg }: Props) => {
   const Icon = '↓';
   let Rotate = '';
-  let deg = props.wind;
 
   switch (true) {
     //North
@@ -50,7 +51,9 @@ const WeatherIcon = (props) => {
     default:
       Rotate = '0deg';
   }
+
   const divStyle = { transform: `rotate(${Rotate})` };
+
   return <div style={divStyle}>{Icon}</div>;
 };
 
