@@ -1,9 +1,13 @@
-import React from 'react';
 import WeatherIcon from './WeatherIcon';
 import Wind from './Wind';
+import {CurrentWeather as CurrentWeatherType} from '../types/weather'
 
-const CurrentWeather = ({ weatherData }) => {
-  const path = weatherData.data;
+type Props = {
+  weatherData: CurrentWeatherType
+}
+
+const CurrentWeather = ({ weatherData }:Props) => {
+  const path = weatherData;
 
   const city = path.name;
   const country = path.sys.country;
