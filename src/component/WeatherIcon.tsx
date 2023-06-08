@@ -1,18 +1,21 @@
-import React from 'react';
-import { ReactComponent as CloudyIcon } from '../assets/icons/cloudy.svg';
-import { ReactComponent as HazeIcon } from '../assets/icons/haze.svg';
-import { ReactComponent as HeavyRainIcon } from '../assets/icons/heavy-rain.svg';
-import { ReactComponent as PartlyCloudyIcon } from '../assets/icons/partly-cloudy.svg';
-import { ReactComponent as RainIcon } from '../assets/icons/rain.svg';
-import { ReactComponent as SleetIcon } from '../assets/icons/sleet.svg';
-import { ReactComponent as SnowIcon } from '../assets/icons/snow.svg';
-import { ReactComponent as SunnyIcon } from '../assets/icons/sunny.svg';
-import { ReactComponent as ThunderstormIcon } from '../assets/icons/thunderstorm.svg';
+import CloudyIcon from '../assets/icons/cloudy.svg';
+import HazeIcon from '../assets/icons/haze.svg';
+import HeavyRainIcon from '../assets/icons/heavy-rain.svg';
+import PartlyCloudyIcon from '../assets/icons/partly-cloudy.svg';
+import RainIcon from '../assets/icons/rain.svg';
+import SleetIcon from '../assets/icons/sleet.svg';
+import SnowIcon from '../assets/icons/snow.svg';
+import SunnyIcon from '../assets/icons/sunny.svg';
+import ThunderstormIcon from '../assets/icons/thunderstorm.svg';
 
-const WeatherIcon = (props) => {
+type Props = {
+  code: number
+}
+
+const WeatherIcon = ({code}: Props) => {
   let Icon = '';
 
-  switch (props.code) {
+  switch (code) {
     // Thunderstorm
     case 200:
     case 201:
@@ -106,7 +109,8 @@ const WeatherIcon = (props) => {
     default:
       Icon = SunnyIcon;
   }
-  return <Icon style={{ width: '100px', height: '100px' }} />;
+  
+  return <img style={{ width: '100px', height: '100px' }} src={Icon} />;
 };
 
 export default WeatherIcon;
