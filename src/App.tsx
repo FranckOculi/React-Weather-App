@@ -1,11 +1,8 @@
-import React, { Fragment } from 'react';
 import Page from './component/Page';
 
-function App() {
+function App (){
   return (
-    <Fragment>
       <Page />
-    </Fragment>
   );
 }
 
