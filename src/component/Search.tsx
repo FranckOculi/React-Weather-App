@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-const Search = ({ submitSearch }) => {
+type Props = {
+  submitSearch : (location: string) => Promise<void>
+}
+
+const Search = ({ submitSearch }: Props) => {
   const [location, setLocation] = useState('');
 
-  const onSubmit = (e) => {
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
     if (!location) return;
     submitSearch(location);
   };
